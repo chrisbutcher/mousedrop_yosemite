@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		832270681A37D36500782FF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832270671A37D36500782FF6 /* AppDelegate.swift */; };
+		8322706A1A37D36500782FF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832270691A37D36500782FF6 /* Images.xcassets */; };
+		8322706D1A37D36500782FF6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8322706B1A37D36500782FF6 /* MainMenu.xib */; };
+		832270791A37D36600782FF6 /* MouseDropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832270781A37D36600782FF6 /* MouseDropTests.swift */; };
+		8337C33C1A5761A0006708D0 /* md5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8337C33B1A5761A0006708D0 /* md5.swift */; };
+		833E73191A3FEC3900EACAAC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833E73181A3FEC3900EACAAC /* SwiftyJSON.swift */; };
+		8340E6031A58F0F5000087B6 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8340E6001A58F0EB000087B6 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8363BCEC1A589BF500154311 /* USBMouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8363BCEB1A589BF500154311 /* USBMouse.swift */; };
+		8363BCEF1A589C8900154311 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8363BCEE1A589C8900154311 /* StringUtils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		832270731A37D36600782FF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8322705A1A37D36500782FF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 832270611A37D36500782FF6;
+			remoteInfo = MouseDrop;
+		};
+		8340E5FF1A58F0EB000087B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8340E5FA1A58F0EB000087B6 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		8340E6011A58F0EB000087B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8340E5FA1A58F0EB000087B6 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		83817E7A1A58F1C3006F5367 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8340E5FA1A58F0EB000087B6 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		833E73161A3FE6F700EACAAC /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				8340E6031A58F0F5000087B6 /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		832270621A37D36500782FF6 /* MouseDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouseDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		832270661A37D36500782FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		832270671A37D36500782FF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		832270691A37D36500782FF6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8322706C1A37D36500782FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		832270721A37D36600782FF6 /* MouseDropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MouseDropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		832270771A37D36600782FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		832270781A37D36600782FF6 /* MouseDropTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseDropTests.swift; sourceTree = "<group>"; };
+		8337C33B1A5761A0006708D0 /* md5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = md5.swift; path = ../md5.swift; sourceTree = "<group>"; };
+		8337C33E1A576230006708D0 /* MouseDrop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MouseDrop-Bridging-Header.h"; path = "MouseDrop/MouseDrop-Bridging-Header.h"; sourceTree = "<group>"; };
+		833E73181A3FEC3900EACAAC /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		8340E5FA1A58F0EB000087B6 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		8363BCEB1A589BF500154311 /* USBMouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USBMouse.swift; sourceTree = "<group>"; };
+		8363BCEE1A589C8900154311 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8322705F1A37D36500782FF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8322706F1A37D36600782FF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		832270591A37D36500782FF6 = {
+			isa = PBXGroup;
+			children = (
+				8337C33E1A576230006708D0 /* MouseDrop-Bridging-Header.h */,
+				832270641A37D36500782FF6 /* MouseDrop */,
+				832270751A37D36600782FF6 /* MouseDropTests */,
+				832270631A37D36500782FF6 /* Products */,
+				8340E5FA1A58F0EB000087B6 /* Alamofire.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		832270631A37D36500782FF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				832270621A37D36500782FF6 /* MouseDrop.app */,
+				832270721A37D36600782FF6 /* MouseDropTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		832270641A37D36500782FF6 /* MouseDrop */ = {
+			isa = PBXGroup;
+			children = (
+				8337C33B1A5761A0006708D0 /* md5.swift */,
+				833E73181A3FEC3900EACAAC /* SwiftyJSON.swift */,
+				832270671A37D36500782FF6 /* AppDelegate.swift */,
+				832270691A37D36500782FF6 /* Images.xcassets */,
+				8322706B1A37D36500782FF6 /* MainMenu.xib */,
+				832270651A37D36500782FF6 /* Supporting Files */,
+				8363BCEB1A589BF500154311 /* USBMouse.swift */,
+				8363BCEE1A589C8900154311 /* StringUtils.swift */,
+			);
+			path = MouseDrop;
+			sourceTree = "<group>";
+		};
+		832270651A37D36500782FF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				832270661A37D36500782FF6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		832270751A37D36600782FF6 /* MouseDropTests */ = {
+			isa = PBXGroup;
+			children = (
+				832270781A37D36600782FF6 /* MouseDropTests.swift */,
+				832270761A37D36600782FF6 /* Supporting Files */,
+			);
+			path = MouseDropTests;
+			sourceTree = "<group>";
+		};
+		832270761A37D36600782FF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				832270771A37D36600782FF6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8340E5FB1A58F0EB000087B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8340E6001A58F0EB000087B6 /* Alamofire.framework */,
+				8340E6021A58F0EB000087B6 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		832270611A37D36500782FF6 /* MouseDrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8322707C1A37D36600782FF6 /* Build configuration list for PBXNativeTarget "MouseDrop" */;
+			buildPhases = (
+				8322705E1A37D36500782FF6 /* Sources */,
+				8322705F1A37D36500782FF6 /* Frameworks */,
+				832270601A37D36500782FF6 /* Resources */,
+				833E73161A3FE6F700EACAAC /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83817E7B1A58F1C3006F5367 /* PBXTargetDependency */,
+			);
+			name = MouseDrop;
+			productName = MouseDrop;
+			productReference = 832270621A37D36500782FF6 /* MouseDrop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		832270711A37D36600782FF6 /* MouseDropTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8322707F1A37D36600782FF6 /* Build configuration list for PBXNativeTarget "MouseDropTests" */;
+			buildPhases = (
+				8322706E1A37D36600782FF6 /* Sources */,
+				8322706F1A37D36600782FF6 /* Frameworks */,
+				832270701A37D36600782FF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				832270741A37D36600782FF6 /* PBXTargetDependency */,
+			);
+			name = MouseDropTests;
+			productName = MouseDropTests;
+			productReference = 832270721A37D36600782FF6 /* MouseDropTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8322705A1A37D36500782FF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = chris;
+				TargetAttributes = {
+					832270611A37D36500782FF6 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					832270711A37D36600782FF6 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 832270611A37D36500782FF6;
+					};
+				};
+			};
+			buildConfigurationList = 8322705D1A37D36500782FF6 /* Build configuration list for PBXProject "MouseDrop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 832270591A37D36500782FF6;
+			productRefGroup = 832270631A37D36500782FF6 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8340E5FB1A58F0EB000087B6 /* Products */;
+					ProjectRef = 8340E5FA1A58F0EB000087B6 /* Alamofire.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				832270611A37D36500782FF6 /* MouseDrop */,
+				832270711A37D36600782FF6 /* MouseDropTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8340E6001A58F0EB000087B6 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 8340E5FF1A58F0EB000087B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8340E6021A58F0EB000087B6 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = 8340E6011A58F0EB000087B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		832270601A37D36500782FF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8322706A1A37D36500782FF6 /* Images.xcassets in Resources */,
+				8322706D1A37D36500782FF6 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		832270701A37D36600782FF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8322705E1A37D36500782FF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8363BCEC1A589BF500154311 /* USBMouse.swift in Sources */,
+				8363BCEF1A589C8900154311 /* StringUtils.swift in Sources */,
+				832270681A37D36500782FF6 /* AppDelegate.swift in Sources */,
+				833E73191A3FEC3900EACAAC /* SwiftyJSON.swift in Sources */,
+				8337C33C1A5761A0006708D0 /* md5.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8322706E1A37D36600782FF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				832270791A37D36600782FF6 /* MouseDropTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		832270741A37D36600782FF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 832270611A37D36500782FF6 /* MouseDrop */;
+			targetProxy = 832270731A37D36600782FF6 /* PBXContainerItemProxy */;
+		};
+		83817E7B1A58F1C3006F5367 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = 83817E7A1A58F1C3006F5367 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8322706B1A37D36500782FF6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8322706C1A37D36500782FF6 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8322707A1A37D36600782FF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8322707B1A37D36600782FF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8322707D1A37D36600782FF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MouseDrop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "MouseDrop/MouseDrop-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8322707E1A37D36600782FF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MouseDrop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "MouseDrop/MouseDrop-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		832270801A37D36600782FF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MouseDropTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MouseDrop.app/Contents/MacOS/MouseDrop";
+			};
+			name = Debug;
+		};
+		832270811A37D36600782FF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MouseDropTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MouseDrop.app/Contents/MacOS/MouseDrop";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8322705D1A37D36500782FF6 /* Build configuration list for PBXProject "MouseDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8322707A1A37D36600782FF6 /* Debug */,
+				8322707B1A37D36600782FF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8322707C1A37D36600782FF6 /* Build configuration list for PBXNativeTarget "MouseDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8322707D1A37D36600782FF6 /* Debug */,
+				8322707E1A37D36600782FF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8322707F1A37D36600782FF6 /* Build configuration list for PBXNativeTarget "MouseDropTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				832270801A37D36600782FF6 /* Debug */,
+				832270811A37D36600782FF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8322705A1A37D36500782FF6 /* Project object */;
+}
