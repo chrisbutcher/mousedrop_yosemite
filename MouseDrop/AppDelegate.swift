@@ -17,7 +17,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSComboBoxDelegate {
     
     @IBOutlet weak var txtUserEmail: NSTextField!
     @IBOutlet weak var txtUserPassword: NSTextField!
-    @IBOutlet weak var txtRemoteHost: NSTextField!   
+    @IBOutlet weak var txtRemoteHost: NSTextField!
+    @IBOutlet weak var txtMouseID: NSTextField!
     
     var statusBar = NSStatusBar.systemStatusBar()
     var statusBarItem : NSStatusItem = NSStatusItem()
@@ -42,6 +43,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSComboBoxDelegate {
         txtUserEmail.stringValue = NSUserDefaults.standardUserDefaults().objectForKey("user_email") as String!
         txtUserPassword.stringValue = NSUserDefaults.standardUserDefaults().objectForKey("user_password") as String!
         txtRemoteHost.stringValue = NSUserDefaults.standardUserDefaults().objectForKey("remote_host") as String!
+        
+        txtMouseID.stringValue = getPasteURL(USBMouse.getUSBMouseID())
         
         window.makeKeyAndOrderFront(self)
         NSApp.activateIgnoringOtherApps(true)
@@ -143,8 +146,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSComboBoxDelegate {
         pasteBoard.writeObjects([input_string])
     }
     
-    
-    
     func signIn() {
         var sign_in_res = httpSignIn()
         sign_in_res.responseString { (_, response, string, errors) in
@@ -183,8 +184,12 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSComboBoxDelegate {
         }
     }
     
+    func getPasteURL(device_uuid: String) ->String {
+        return "\(self.remote_host)/paste.json?paste[device_uuid]=\(device_uuid)"
+    }
+    
     func syncClipboard(device_uuid: String) {
-        httpSessionManager!.request(.GET, "\(self.remote_host)/paste.json?paste[device_uuid]=\(device_uuid)")
+        httpSessionManager!.request(.GET, getPasteURL(device_uuid))
             .responseJSON { (_, response, jsonResponse, _) in
                 println("Checking remote paste")
                 

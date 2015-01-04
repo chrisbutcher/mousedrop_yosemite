@@ -14,6 +14,7 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="MouseDrop" customModuleProvider="target">
             <connections>
                 <outlet property="statusBarMeu" destination="3vm-jA-Byr" id="UWu-Ab-IMS"/>
+                <outlet property="txtMouseID" destination="7Jn-xi-KkT" id="Rv5-Yc-Pok"/>
                 <outlet property="txtRemoteHost" destination="Av9-L5-fVk" id="hrS-85-gVh"/>
                 <outlet property="txtUserEmail" destination="AVn-ow-mJa" id="X9q-hl-Lfv"/>
                 <outlet property="txtUserPassword" destination="x9m-y5-Mcv" id="rEn-1t-Z7e"/>
@@ -672,31 +673,22 @@
         </menu>
         <window title="MouseDrop" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="327" height="217"/>
+            <rect key="contentRect" x="335" y="390" width="451" height="247"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <value key="minSize" type="size" width="327" height="217"/>
+            <value key="maxSize" type="size" width="327" height="217"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="327" height="217"/>
+                <rect key="frame" x="0.0" y="0.0" width="451" height="247"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FjA-5U-VJX">
-                        <rect key="frame" x="226" y="13" width="87" height="32"/>
-                        <buttonCell key="cell" type="push" title="Sign In" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Pu7-Jj-Ydk">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="clickedConfirmLogin:" target="Voe-Tx-rLC" id="2Oo-8c-29G"/>
-                        </connections>
-                    </button>
                     <box autoresizesSubviews="NO" fixedFrame="YES" title="Sign In" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="I97-Bd-uXM">
-                        <rect key="frame" x="17" y="58" width="293" height="139"/>
+                        <rect key="frame" x="17" y="58" width="417" height="169"/>
                         <view key="contentView">
-                            <rect key="frame" x="1" y="1" width="291" height="123"/>
+                            <rect key="frame" x="1" y="1" width="415" height="153"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AVn-ow-mJa">
-                                    <rect key="frame" x="97" y="91" width="176" height="22"/>
+                                    <rect key="frame" x="97" y="121" width="300" height="22"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="email@email.com" drawsBackground="YES" id="MDr-YC-kMm">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -704,7 +696,7 @@
                                     </textFieldCell>
                                 </textField>
                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="od3-lU-d0z">
-                                    <rect key="frame" x="16" y="94" width="38" height="17"/>
+                                    <rect key="frame" x="42" y="124" width="38" height="17"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Email" id="Nc4-7F-Jz9">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -712,7 +704,7 @@
                                     </textFieldCell>
                                 </textField>
                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D36-cb-Szu">
-                                    <rect key="frame" x="16" y="61" width="65" height="17"/>
+                                    <rect key="frame" x="16" y="92" width="65" height="17"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Password" id="pwh-Ck-MrT">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -720,7 +712,7 @@
                                     </textFieldCell>
                                 </textField>
                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Av9-L5-fVk">
-                                    <rect key="frame" x="97" y="28" width="176" height="22"/>
+                                    <rect key="frame" x="97" y="58" width="300" height="22"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="http://host.com" drawsBackground="YES" id="ZCZ-ED-GN5">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -728,15 +720,23 @@
                                     </textFieldCell>
                                 </textField>
                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UZV-sn-gbU">
-                                    <rect key="frame" x="16" y="15" width="65" height="38"/>
+                                    <rect key="frame" x="16" y="45" width="65" height="38"/>
                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Remote Host" id="M3h-P4-7ES">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                 </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cfP-Kt-oc0">
+                                    <rect key="frame" x="13" y="5" width="84" height="34"/>
+                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Paste URL" id="pEp-fZ-eQu">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
                                 <secureTextField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x9m-y5-Mcv">
-                                    <rect key="frame" x="97" y="58" width="176" height="22"/>
+                                    <rect key="frame" x="97" y="88" width="300" height="22"/>
                                     <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="password" drawsBackground="YES" usesSingleLineMode="YES" id="zGQ-tM-xNh">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -746,13 +746,31 @@
                                         </allowedInputSourceLocales>
                                     </secureTextFieldCell>
                                 </secureTextField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Jn-xi-KkT">
+                                    <rect key="frame" x="97" y="20" width="300" height="22"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="cUz-D5-j7g">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
                             </subviews>
                         </view>
                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </box>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FjA-5U-VJX">
+                        <rect key="frame" x="350" y="14" width="87" height="32"/>
+                        <buttonCell key="cell" type="push" title="Sign In" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Pu7-Jj-Ydk">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="clickedConfirmLogin:" target="Voe-Tx-rLC" id="2Oo-8c-29G"/>
+                        </connections>
+                    </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JPX-bS-ihd">
-                        <rect key="frame" x="143" y="14" width="83" height="32"/>
+                        <rect key="frame" x="264" y="14" width="86" height="32"/>
                         <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eOw-C4-DRY">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -766,7 +784,7 @@ Gw
                     </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="394.5" y="448.5"/>
+            <point key="canvasLocation" x="466.5" y="454.5"/>
         </window>
         <menu autoenablesItems="NO" id="3vm-jA-Byr">
             <items>
@@ -790,7 +808,7 @@ Gw
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="127" y="386.5"/>
+            <point key="canvasLocation" x="39" y="406.5"/>
         </menu>
     </objects>
 </document>
