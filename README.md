@@ -1,6 +1,6 @@
 MouseDrop (for OS X Yosemite)
 ==================
-Run the [rails app](https://github.com/chrisbutcher/mousedrop_rails), and run this app, and click ```Sign In``` from the MouseDrop toolbar menu. Enter your user credentials there. 
+Run the [rails app](https://github.com/chrisbutcher/mousedrop_rails), and run this app (OS X Yosemite only), and click ```Sign In``` from the MouseDrop toolbar menu. Enter your user credentials there. 
 
 ## Dependencies (as git submodules) and many thanks to
 * [AlamoFire](https://github.com/Alamofire/Alamofire)
